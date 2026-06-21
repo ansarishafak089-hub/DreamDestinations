@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamDestinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DreamDestinations</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore The World With Us</h1>
+            <p>Discover beautiful destinations and create unforgettable memories.</p>
+            <a href="#" class="btn">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach">
+                <h3>Maldives</h3>
+                <p>Crystal clear water and beautiful beaches.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963" alt="Paris">
+                <h3>Paris</h3>
+                <p>Experience the city of love and culture.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Mountains">
+                <h3>Switzerland</h3>
+                <p>Enjoy breathtaking mountain views.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <h2>Why Choose Us?</h2>
+        <p>
+            DreamDestinations helps travelers discover amazing places,
+            affordable packages, and unforgettable experiences around the world.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DreamDestinations | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
