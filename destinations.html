@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#008cff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+}
+
+/* Banner */
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+    background-size:cover;
+    background-position:center;
+    height:50vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+/* Cards */
+
+.destination-container{
+    padding:60px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.content{
+    padding:20px;
+}
+
+.content h2{
+    margin-bottom:10px;
+}
+
+.content p{
+    margin-bottom:15px;
+    color:#555;
+}
+
+button{
+    background:#008cff;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0066cc;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - DreamDestinations</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DreamDestinations</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="banner">
+        <h1>Explore Amazing Destinations</h1>
+        <p>Find your next dream vacation destination.</p>
+    </section>
+
+    <!-- Destination Cards -->
+    <section class="destination-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd" alt="Maldives">
+            <div class="content">
+                <h2>Maldives</h2>
+                <p>Enjoy crystal-clear waters, luxury resorts, and beautiful beaches.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" alt="Paris">
+            <div class="content">
+                <h2>Paris</h2>
+                <p>Visit the Eiffel Tower and experience French culture.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Switzerland">
+            <div class="content">
+                <h2>Switzerland</h2>
+                <p>Discover stunning mountains, lakes, and scenic beauty.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526481280695-3c4693e4e0d8" alt="Dubai">
+            <div class="content">
+                <h2>Dubai</h2>
+                <p>Explore modern architecture, shopping, and desert adventures.</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DreamDestinations | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
