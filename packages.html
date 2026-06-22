@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#008cff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1488646953014-85cb44e25828');
+    background-size:cover;
+    background-position:center;
+    height:45vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Packages */
+
+.packages{
+    padding:80px 8%;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.package-card{
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    position:relative;
+}
+
+.package-card h2{
+    margin-bottom:10px;
+}
+
+.package-card h3{
+    color:#008cff;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.package-card ul{
+    list-style:none;
+    margin-bottom:25px;
+}
+
+.package-card ul li{
+    margin:12px 0;
+}
+
+.package-card button{
+    background:#008cff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.package-card button:hover{
+    background:#0066cc;
+}
+
+.popular{
+    transform:scale(1.05);
+    border:3px solid #008cff;
+}
+
+.badge{
+    position:absolute;
+    top:-12px;
+    right:20px;
+    background:#008cff;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* Footer */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - DreamDestinations</title>
+    <link rel="stylesheet" href="packages.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DreamDestinations</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Travel Packages</h1>
+        <p>Choose the perfect package for your next adventure.</p>
+    </section>
+
+    <!-- Packages -->
+    <section class="packages">
+
+        <div class="package-card">
+            <h2>Silver Package</h2>
+            <h3>₹15,999</h3>
+            <ul>
+                <li>3 Days / 2 Nights</li>
+                <li>Hotel Stay</li>
+                <li>Breakfast Included</li>
+                <li>City Tour</li>
+            </ul>
+            <button>Book Now</button>
+        </div>
+
+        <div class="package-card popular">
+            <span class="badge">Popular</span>
+            <h2>Gold Package</h2>
+            <h3>₹29,999</h3>
+            <ul>
+                <li>5 Days / 4 Nights</li>
+                <li>Luxury Hotel</li>
+                <li>All Meals Included</li>
+                <li>Guided Tours</li>
+            </ul>
+            <button>Book Now</button>
+        </div>
+
+        <div class="package-card">
+            <h2>Platinum Package</h2>
+            <h3>₹49,999</h3>
+            <ul>
+                <li>7 Days / 6 Nights</li>
+                <li>5-Star Resort</li>
+                <li>All Inclusive</li>
+                <li>VIP Experiences</li>
+            </ul>
+            <button>Book Now</button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DreamDestinations | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
